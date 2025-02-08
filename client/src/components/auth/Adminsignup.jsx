@@ -34,7 +34,7 @@ const Adminsignup = () => {
         </form>
 
         <div className="flex flex-row gap-4 my-4">
-          <div>Already have account ? <Link className="text-violet-400 font-bold">Sign Up</Link></div>
+          <div>Already have account ? <Link to="/auth/admin/signin" className="text-violet-400 font-bold">Sign Up</Link></div>
         </div>
       </div>
 
