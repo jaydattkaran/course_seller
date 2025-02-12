@@ -3,18 +3,15 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='bg-neutral-900 flex flex-row justify-center h-18 w-full px-20 gap-20 py-4'>
-        <div className='text-4xl font-bold items-center'>Allen</div>
+    <div className='flex flex-row justify-center h-18 w-full px-20 gap-20 py-4'>
+        <div className='text-2xl font-bold items-center'>PW</div>
         <ul className='flex font-semibold items-center flex-row gap-8'>
-            <li><Link>Courses</Link></li>
-            <li><Link>Test Series</Link></li>
-            <li><Link>Scholarships</Link></li>
-            <li><Link>Results</Link></li>
-            <li><Link>Study Materials</Link></li>
-            <li><Link>About us</Link></li>
+            <li><Link>Vidyapeeth</Link></li>
+            <li><Link>Upskilling-Job Assistance</Link></li>
+            <li><Link>PW Store(Books)</Link></li>
+            <li><Link>REAL Test</Link></li>
         </ul>
-        <button className='border-none font-semibold uppercase h-8 px-4 rounded-full bg-blue-700'>Talk to us</button>
-        <div className='text-2xl font-bold items-center'>User</div>
+        <button className='border-none font-semibold h-10 px-4 rounded-lg bg-purple-700'>Login/Register</button>
     </div>
   )
 }
