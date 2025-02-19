@@ -57,7 +57,7 @@ cd client
 npm install
 ```
 
-#### 3️⃣ Start the project\
+#### 3️⃣ Start the project
 
 Frontend: 
 ```
@@ -74,7 +74,8 @@ npm start
 Create a .env file in the backend (/api) directory and add:
 ```
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
+JWT_USER_PASSWORD=your_jwt_secret_key
+JWT_ADMIN_PASSWORD=your_jwt_secret_key
 ```
 
 #### 🎯 Roadmap
