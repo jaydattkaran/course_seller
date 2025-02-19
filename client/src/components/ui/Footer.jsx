@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons"
 const Footer = () => {
   return (
     <div className="bg-neutral-800">
-      <div className="flex justify-center pt-10 gap-10">
+      <div className="flex flex-col lg:flex-row justify-center lg:items-center pt-10 px-10 lg:px-0 gap-10">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2">
             <img
@@ -15,7 +15,7 @@ const Footer = () => {
             />
             <div className="text-xl font-bold">Physics Wallah</div>
           </div>
-          <div className="text-xs w-[30rem]">
+          <div className="text-sm lg:w-[30rem]">
             We understand that every student has unique needs and abilities,
             that's why our curriculum is designed to adapt to your needs and
             help you grow!
@@ -33,7 +33,7 @@ const Footer = () => {
             />
           </div>
           <div>
-            <div className="text-lg font-semibold">Let's get social :</div>
+            <div className="text-lg font-semibold mb-2">Let's get social :</div>
             <div>
               <ul className="flex gap-4">
                 <li className="cursor-pointer"><SocialIcon url="https://facebook.com"/></li>
@@ -167,7 +167,7 @@ const Footer = () => {
         className="flex flex-col gap-4 items-center justify-center
       py-10"
       >
-        <div className="max-w-[70vw]">
+        <div className="lg:max-w-[70vw] max-w-[85vw]">
           <div className="text-xl font-semibold mb-2">Know about Physics Wallah</div>
           <div>
             Physics Wallah is an Indian online education platform, that provides
@@ -180,7 +180,7 @@ const Footer = () => {
             rating on its app.
           </div>
         </div>
-        <div className="max-w-[70vw]">
+        <div className="lg:max-w-[70vw] max-w-[85vw]">
           <div className="text-xl font-semibold mb-2">We Stand Out because</div>
           <div>
             We successfully provide students with intensive courses by India's
@@ -191,7 +191,7 @@ const Footer = () => {
             earlier.
           </div>
         </div>
-        <div className="max-w-[70vw]">
+        <div className="lg:max-w-[70vw] max-w-[85vw]">
           <div className="text-xl font-semibold mb-2">Our Key Focus Areas</div>
           <div>
             Physics Wallah’s main focus is to create accessible learning
@@ -202,7 +202,7 @@ const Footer = () => {
             provide reliable solutions for student prep.
           </div>
         </div>
-        <div className="max-w-[70vw]">
+        <div className="lg:max-w-[70vw] max-w-[85vw]">
           <div className="text-xl font-semibold mb-2">What Makes Us Different</div>
           <div>
             Physics Wallah strives to develop a comprehensive pedagogical

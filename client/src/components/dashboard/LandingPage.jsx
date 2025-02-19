@@ -67,6 +67,14 @@ function LandingPage() {
       name: "Amit Kumar Mandal",
       category: "Banking",
     },
+    {
+      message:
+        "PW helped me in establishing the basics of every subject through which I was able to progress quickly and was also able to increase my speed and also maintaining accuracy.",
+      profile:
+        "	https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/0274f09e-6be0-40cf-bbfa-f74fb07eb430.png",
+      name: "Amit Kumar Mandal",
+      category: "Banking",
+    },
   ];
   const features = [
     {
@@ -235,7 +243,7 @@ function LandingPage() {
   const Feedback = ({ message, name, category, profile }) => {
     return (
       <div className="flex justify-center">
-        <div className="flex flex-col rounded justify-between gap-6 w-[20rem] bg-gray-800 px-4 py-6">
+        <div className="flex flex-col rounded justify-between gap-6 w-[25rem] bg-gray-800 px-4 py-6">
           <div className="text-md">{message}</div>
           <div className="flex flex-row gap-2">
             <div>
@@ -264,8 +272,8 @@ function LandingPage() {
           />
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:justify-center items-center py-10 gap-20">
-          <div className="w-[25%] flex flex-col gap-2">
+        <div className="flex flex-col bg-neutral-900 lg:flex-row lg:justify-center items-center py-10 gap-20">
+          <div className="lg:w-[25%] w-[50%] flex flex-col gap-2">
             <div className="text-4xl font-bold">
               Bharat's{" "}
               <span className="text-purple-600">Trusted & Affordable</span>
@@ -286,7 +294,7 @@ function LandingPage() {
           />
         </div>
 
-        <div className="flex flex-row gap-10 rounded bg-gray-800 w-[60%] mx-auto justify-center">
+        <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-10 -translate-y-8 rounded bg-gray-800 lg:w-[60%] w-[90%] mx-auto justify-center">
           {features.map((feature, index) => (
             <Feature
               className="flex flex-row"
@@ -306,7 +314,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="flex py-10 justify-center">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid lg:grid-cols-3 grid-cols-2 gap-4">
               {courses.map((course, index) => (
                 <Course key={index} {...course} index={index} />
               ))}
@@ -344,7 +352,7 @@ function LandingPage() {
                 <div>Available in 105 cities</div>
               </div>
 
-              <div className="grid p-4 grid-cols-4 gap-4">
+              <div className="grid p-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4">
                 {cities.map((city, index) => (
                   <City key={index} {...city} index={index} />
                 ))}
@@ -369,7 +377,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
             {works.map((work, index) => (
               <Work key={index} {...work} index={index} />
             ))}
@@ -410,7 +418,7 @@ function LandingPage() {
         </div>
 
         <div className="flex justify-center py-10">
-          <div className="flex justify-between gap-10 bg-gray-800 rounded-lg h-[25rem] w-[60rem] px-10 pt-16">
+          <div className="flex justify-between gap-10 bg-gray-800 rounded-lg h-[25rem] lg:w-[60rem] px-10 pt-16">
             <div className="flex flex-col gap-4">
               <div className="text-2xl font-bold">
                 Join 15 Million students on the app today!
@@ -445,7 +453,7 @@ function LandingPage() {
             <div className="text-4xl font-bold">Students ❤️ Physics Wallah</div>
             <div>Hear from our students</div>
           </div>
-          <div className="flex gap-6 p-4 rounded bg-gray-800 w-[60%] mt-6">
+          <div className="flex flex-col md:flex-row gap-6 p-4 rounded bg-gray-800 lg:w-[60%] w-[90%] mt-6">
             <img
               src="https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/6ce6e71a-1cba-4fff-a325-55b3376e96e2.png"
               alt="video"
@@ -471,7 +479,7 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-4 py-10">
+        <div className="grid lg:grid-cols-4 grid-cols-2 justify-center gap-4 py-10">
           {feedbacks.map((feedback, index) => (
             <Feedback key={index} {...feedback} index={index} />
           ))}
@@ -485,7 +493,7 @@ function LandingPage() {
               journey.
             </div>
           </div>
-          <div className="flex flex-row gap-4 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-10">
             {resources.map((resource, index) => (
               <span
                 key={index}
