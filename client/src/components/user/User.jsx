@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../ui/Navbar";
 import Footer from "../ui/Footer";
+import UserNavbar from "../ui/UserNavbar";
 
 export default  function User() {
   const [userData, setUserData] = useState(null);
@@ -40,8 +41,9 @@ export default  function User() {
 
   return (
     <>
-      <Navbar />
-      <div className="my-6 px-10 text-4xl font-bold">
+      {/* <Navbar /> */}
+      <UserNavbar/>
+      <div className="my-10 px-10 text-4xl font-bold flex justify-center">
       {userData ? (
         <div>
           <p>{userData.message}</p>

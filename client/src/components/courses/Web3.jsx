@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../ui/Navbar'
+import UserNavbar from "../ui/UserNavbar";
 import Footer from '../ui/Footer'
 
 export default function Web3() {
@@ -42,7 +42,7 @@ export default function Web3() {
 
   return (
     <>
-      <Navbar />
+      <UserNavbar />
       <div className='flex flex-col items-center justify-center my-4 '>
         <div className='flex flex-row gap-10 my-14'>
           <div className='flex flex-col w-[30vw] gap-4'>

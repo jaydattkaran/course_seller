@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../ui/Navbar'
+import UserNavbar from "../ui/UserNavbar";
 import Footer from '../ui/Footer'
 
 export default function Web2() {
@@ -42,12 +42,12 @@ export default function Web2() {
 
   return (
     <>
-      <Navbar />
+      <UserNavbar />
       <div className='flex flex-col items-center justify-center my-4 '>
         <div className='flex flex-row gap-10 my-14'>
           <div className='flex flex-col w-[30vw] gap-4'>
-            <div className='text-4xl font-bold'>Online coaching for Web2</div>
-            <div className='text-gray-400 text-xl font-semibold'>WEB2 online coaching by allen online helps you secure high paying job</div>
+            <div className='text-4xl font-bold'>Online coaching for WebDev</div>
+            <div className='text-gray-400 text-xl font-semibold'>WebDev online coaching by allen online helps you secure high paying job</div>
             <div className='text-gray-400 text-xl font-semibold'>With 36 years of expertise, live classes from ALLEN Kota faculty, and the best study materials, ALLEN Online sets you up for JEE success.</div>
             <div className='flex flex-row gap-4'>
               <button className='border-2 border-blue-700 cursor-pointer text-xl rounded-full px-10 py-2'>Know more</button>

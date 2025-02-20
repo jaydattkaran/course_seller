@@ -22,7 +22,7 @@ function App() {
           <Route path='/' element={<LandingPage />}>
           </Route>
 
-          <Route path='/purchase/web2' element={<Web2 />} />
+          <Route path='/purchase/webdev' element={<Web2 />} />
           <Route path='/purchase/web3' element={<Web3 />} />
           <Route path='/purchase/dsa' element={<Dsa />} />
 
