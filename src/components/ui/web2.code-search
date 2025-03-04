@@ -1,0 +1,14 @@
+# Query: web2
+
+6 results - 3 files
+
+client/src/App.jsx:
+  12: import Web2 from './components/courses/Web2'
+  25:           <Route path='/purchase/webdev' element={<Web2 />} />
+
+client/src/components/admin/Admincourses.jsx:
+  7:       title: "WEB2",
+  8:       description: "All about web2",
+
+client/src/components/courses/Web2.jsx:
+  5: export default function Web2() {
