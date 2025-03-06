@@ -9,6 +9,7 @@ function Courses() {
       title: "WebDev",
       description: "All about WebDev",
       button: "Register",
+      image: "src/assets/img.avif",
     },
     {
       path: "/purchase/web3",
@@ -16,6 +17,7 @@ function Courses() {
       title: "WEB3",
       description: "All about web3",
       button: "Register",
+      image: "src/assets/img.avif",
     },
     {
       path: "/purchase/dsa",
@@ -23,12 +25,22 @@ function Courses() {
       title: "DSA",
       description: "All about dsa",
       button: "Register",
+      image: "src/assets/img.avif",
     },
   ];
 
-  const Course = ({ title, description, button, path }) => {
+  const Course = ({ image, title, description, button, path }) => {
     return (
-      <div>
+      <div className="relative">
+        {/* Background Image (Hidden by Default) */}
+        <div className="absolute inset-0 opacity-100 group-hover:opacity-100 transition-opacity duration-500">
+          <img
+            src={image}
+            alt={`${title} Background`}
+            layout="fill"
+            className="opacity-20"
+          />
+        </div>
         <Link to={path}>
           <div className="h-[13rem] w-[20rem] bg-neutral-700 rounded-xl p-4 ">
             <div className="text-2xl font-bold">{title}</div>
@@ -55,7 +67,6 @@ function Courses() {
               index={index}
             />
           ))}
-          
         </div>
       </div>
     </div>
